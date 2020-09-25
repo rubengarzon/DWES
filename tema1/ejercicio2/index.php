@@ -4,8 +4,8 @@
     * Calcular el area de un cuadrado
     */
     
-    $pi = 3.14;
     $radio = 5;
+    $img = "./img/circulo.png";
 ?>
 
 <!DOCTYPE html>
@@ -18,9 +18,10 @@
 <body>
     <?php
         echo "<div>";
+            echo "<img src='$img' width='100px'>";
             echo "<p>";
-                echo "El area del cuadrado es: ";
-                echo $pi * $radio * $radio;
+                echo "El area del círculo es: ";
+                echo pi() * $radio * $radio;
             echo "</p>";
         echo "</div>";
     ?>
