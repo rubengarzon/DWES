@@ -1,10 +1,11 @@
 <?php
         /*
         * @author Rubén Jesús Garzón Zafra
-        * 
+        * Cargar en variables mes y año e indicar 
         */
 
-        
+        $mes = ;
+        $anio = ;
 
 ?>
 
