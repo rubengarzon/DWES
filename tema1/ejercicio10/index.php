@@ -1,10 +1,12 @@
 <?php
         /*
         * @author Rubén Jesús Garzón Zafra
-        * 
+        *  Cargar fecha de nacimiento en una variable y calcular la edad.
         */
 
-        
+        $fecha = new DateTime("1993-08-09");
+        $hoy = new DateTime();
+        $edad = $hoy -> diff($fecha);
 
 ?>
 
@@ -18,7 +20,7 @@
 <body>
        
     <?php
-    
+        echo $edad -> y . " años";
     ?>
 
 
