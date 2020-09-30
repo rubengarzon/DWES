@@ -47,9 +47,10 @@
             for ($i=1; $i < 11; $i++) {
                     echo "<tr>";
                         echo "tabla de multiplicar del " . $i;
-                        for ($j=1; $j < 11; $j++) { 
+                        for ($j=1; $j < 11; $j++) {
+                            echo "<td>"; 
                             echo $i * $j;
-                            echo "<br>";
+                            echo "</td>";
                         }
                     echo "</tr>";
             }

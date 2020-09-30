@@ -18,14 +18,18 @@
 <body>
        
     <?php
-        for ($i=0; $i < 10; $i++) { 
-            if($i % $par == 0 && $control < 4){
+        for ($i=1; $i < 10; $i++) { 
+
+            if($i % $par == 0 && $control < 3){
                 $numero = $numero + $i;
                 $control++;
+                echo "$i es par";
+                echo "<br>";
             }
+
         }
 
-        echo $numero;
+        echo "Suma de los tres números pares $numero";
     ?>
 
 
