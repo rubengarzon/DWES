@@ -3,8 +3,12 @@
         * @author Rubén Jesús Garzón Zafra
         * Mostrar el calendario del mes
         */
-
-        $hoy = date("d");
+        $fecha = "2015-08-30";
+        $fechaComoEntero = strtotime($fecha);
+        $festivo = "15";
+        $hoy = date("d", $fechaComoEntero);
+        $dias = date("t", $fechaComoEntero);
+        $anio = date("y", $fechaComoEntero);
 
 ?>
 
@@ -18,18 +22,45 @@
 <body>
        
     <?php
-        for ($i=1; $i < 32; $i++) {
+
+
+        echo "<table style='text-align: center';>";
+
             
-            if($i == $hoy){
-                echo "<p style='color: green margin: 0'>";
-                echo $hoy . " ";
-                echo "</p>";
-            }else{
-                echo "<p>";
-                echo $i . " "; 
-                echo "</p>";
-            }
-        }
+            
+                for ($j=1; $j <= $dias; $j++) {
+                    if($j == 1 || $j == 8 || $j == 15 || $j == 29){
+                        echo "<tr style='border: 1px solid black'>";
+                    }
+                    echo "<td style='border: 1px solid black'>";
+                        if($j == $festivo){
+                            echo "<p style='background-color: red; color: white;'>";
+                            echo "$j";
+                            echo "</p>";
+                        }elseif($j == $hoy){
+                            echo "<p style='background-color: green; color: white;'>";
+                            echo "$j";
+                            echo "</p>";
+                        }else{
+                            echo "<p>";
+                            echo "$j";
+                            echo "</p>";
+                        }
+                    echo "</td>";
+                        if($j == 7 || $j == 14 || $j == 21 || $j == 28){
+                            echo "</tr>";  
+                        }
+                         
+
+                }
+            
+            
+
+           
+            
+        echo "</table>";   
+        
+        
     ?>
 
 
