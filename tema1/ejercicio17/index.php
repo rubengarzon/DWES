@@ -9,7 +9,6 @@
         $hoy = date("d", $fechaComoEntero);
         $dias = date("t", $fechaComoEntero);
         $anio = date("y", $fechaComoEntero);
-        // $dia = date("l", $fechaComoEntero);
 
 ?>
 
@@ -23,16 +22,27 @@
 <body>
        
     <?php
+        echo "Calendario " . $fecha;
+        echo "<br>";
+        echo "<br>";
             for ($i=1; $i < $dias; $i++) {
                 $dia = date("l", mktime(0,0,0,8,$i,2015));
                 
                     if($dia == "Sunday"){
+                        echo "<p style='display: inline'>";
                         echo $i;
+                        echo "<br>";
+                        echo "</p>";
+                        
                     }elseif($i == $festivo){
-                        echo $i . " "; 
-                    }elseif($i == $hoy){
+                        echo "<p style='display: inline; color: red;'>";
                         echo $i . " ";
-                    }else{
+                        echo "</p>"; 
+                    }elseif($i == $hoy){
+                        echo "<p style='display: inline; color: green;'>";
+                        echo $i . " ";
+                        echo "</p>";
+                    }else{  
                         echo $i . " ";
                     }
                 
