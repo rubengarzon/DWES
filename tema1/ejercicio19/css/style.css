@@ -1,0 +1,29 @@
+*{
+    color: white;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #264653;
+    margin-left: 20px;
+}
+
+.enlace{
+    background-color: #2a9d8f;
+    color: white;
+    font-size: 25px;
+    box-shadow: white 1px 1px 1px 1px;
+    text-decoration: none;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td{}
+
+.celdas{
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+}

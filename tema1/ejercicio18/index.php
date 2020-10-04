@@ -15,18 +15,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 18</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-       
-    <?php
 
-        echo "<h1> Meses del año </h1>";
+    <a class="enlace" href='../../' ;>Inicio</a>
+    <a class="enlace" href='https://github.com/rubengarzon/DWES/blob/master/tema1/ejercicio18/index.php' style='margin-left: 10px;'>Ver código</a>
+        
+    <h1>Meses del año</h1>
+    
+    <?php
 
         for ($i=0; $i < $mesesLength ; $i++) { 
             echo "<p> $meses[$i] </p>";
         }
 
-        echo "<a href='http://' style='background-color: black; color: white; font-size: 20px;'>Ver código</a>";
     ?>
 
 
