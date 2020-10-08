@@ -29,13 +29,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
-    <?php
-        foreach ($nota as $key => $value) {
-            echo $key . " " . $value;
-            echo "<br>";
-        }
-    ?>
+    <a class="enlace" href='../../html/array/EjerciciosArray.php' ;>Inicio</a>
+    <a class="enlace" href='https://github.com/rubengarzon/DWES/blob/master/tema1/ejercicio19/index.php' style='margin-left: 10px;'>Ver código</a>
+    <br>
+    <br>
+    <table>
+        <th>Alumno</th>
+        <th>Nota</th>
+        <?php
+        
+            foreach ($nota as $key => $value) {
+                echo "<tr>";
+                    
+                    echo "<td style='border: 1px solid black;text-align:center'>";
+                        echo $key;
+                    echo "</td>";
+                    echo "<td style='border: 1px solid black;text-align:center'>";
+                        echo $value;
+                    echo "</td>";
+                echo "</tr>";
+            }
+        ?>
+    </table>
 </body>
 </html>
