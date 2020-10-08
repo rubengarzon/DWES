@@ -19,7 +19,7 @@
 </head>
 <body>
 
-    <a class="enlace" href='../../' ;>Inicio</a>
+    <a class="enlace" href='../../html/array/EjerciciosArray.php' ;>Inicio</a>
     <a class="enlace" href='https://github.com/rubengarzon/DWES/blob/master/tema1/ejercicio18/index.php' style='margin-left: 10px;'>Ver código</a>
         
     <h1>Meses del año</h1>
