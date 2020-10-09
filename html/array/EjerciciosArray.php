@@ -35,7 +35,6 @@
                   echo "<a href='$value'>$key</a>";
                   echo "<br>";
                   echo "<br>";
-                  echo "aaaa";
                 }
             ?>
             
