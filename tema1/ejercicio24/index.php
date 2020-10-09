@@ -69,7 +69,7 @@
     <?php
       foreach ($carta as $key => $value) {
          foreach ($value as $clave => $valor) {
-            # code...
+            echo $clave . " " . $valor;
          }
       }
     ?>
