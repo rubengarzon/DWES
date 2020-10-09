@@ -7,6 +7,7 @@
         "Nota de los alumnos de 2º DAW para el módulo DWES" => "../../tema1/ejercicio20/index.php",
         "Verbos irregulares en inglés" => "../../tema1/ejercicio21/index.php",
         "Información sobre continentes, países, capitales y banderas" => "../../tema1/ejercicio23/index.php",
+        "Carta de un restaurante" => "../../tema1/ejercicio24/index.php",
     ];
 
 ?>

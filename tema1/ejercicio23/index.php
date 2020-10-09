@@ -10,25 +10,25 @@
             "Nombre" => "Europa",
             "Superficie" => "10 530 751 km²",
             "Población" => "743 704 000 hab.",
-            "Países"=> "50"
+            "Países"=> "50 países"
         ],
         "Asia" => [
             "Nombre" => "Asia",
             "Superficie" => "44 541 138 km²",
             "Población" => "4 598 168 800 hab.",
-            "Países"=>"49"
+            "Países"=>"49 países"
         ],
         "Oceanía" => [
             "Nombre" => "Oceanía",
             "Superficie" => "8 542 4991​ km²",
             "Población" => "41 117 432 hab.",
-            "Países"=>"15"
+            "Países"=>"15 países"
         ],
         "Africa" => [
             "Nombre" => "Africa",
             "Superficie" => "30 221 535 km²",
             "Población" => "1 320 000 000 hab.",
-            "Países"=>"54"
+            "Países"=>"54 países"
         ],
         "Antartida" => [
             "Nombre" => "Antartida",
@@ -40,7 +40,7 @@
             "Nombre" => "America",
             "Superficie" => "42 549 000 km²",
             "Población" => "970 040 0002​ hab.",
-            "Países"=>"35"
+            "Países"=>"35 países"
         ],
 
     ];
@@ -52,101 +52,55 @@
             "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
         ],
         "Albania"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
+            "Nombre" => "Albania",
+            "Capital" => "Tirana",
+            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/203px-Flag_of_Albania.svg.png"
         ],
         "Alemania"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
+            "Nombre" => "Alemania",
+            "Capital" => "Berlín",
+            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/203px-Flag_of_Germany.svg.png"
         ],
         "Andorra"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
+            "Nombre" => "Andorra",
+            "Capital" => "Andorra la Vieja",
+            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Andorra.svg/203px-Flag_of_Andorra.svg.png"
         ],
         "Angola"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
+            "Nombre" => "Angola",
+            "Capital" => "Luanda",
+            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Angola.svg/203px-Flag_of_Angola.svg.png"
         ],
         "Antigua y Barbuda"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
+            "Nombre" => "Antigua y Barbuda",
+            "Capital" => "Saint John",
+            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Flag_of_Antigua_and_Barbuda.svg/203px-Flag_of_Antigua_and_Barbuda.svg.png"
         ],
         "Arabia Saudita"=> [
-            "Nombre" => "Afganistán",
+            "Nombre" => "Arabia Saudita",
             "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
+            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/203px-Flag_of_Saudi_Arabia.svg.png"
         ],
         "Argelia"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
+            "Nombre" => "Argelia",
+            "Capital" => "Argel",
+            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/203px-Flag_of_Algeria.svg.png"
         ],
         "Argentina"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
+            "Nombre" => "Argentina",
+            "Capital" => "Buenos Aires",
+            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/203px-Flag_of_Argentina.svg.png"
         ],
         "Armenia"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
+            "Nombre" => "Armenia",
+            "Capital" => "Ereván",
+            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_Armenia.svg/203px-Flag_of_Armenia.svg.png"
         ],
         "Australia"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
+            "Nombre" => "Australia",
+            "Capital" => "Canberra",
+            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/203px-Flag_of_Australia_%28converted%29.svg.png"
         ],
-        "Austria"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
-        ],
-        "Azerbaiyán"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
-        ],
-        "Bahamas"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
-        ],
-        "Bangladés"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
-        ],
-        "Barbados"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
-        ],
-        "Baréin"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
-        ],
-        "Bélgica"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
-        ],
-        "Belice"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
-        ],
-        "Benín"=> [
-            "Nombre" => "Afganistán",
-            "Capital" => "Kabul",
-            "Bandera" => "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
-        ],
-        "Bielorrusia","Birmania","Bolivia","Bosnia y Herzegovina","Botsuana","Brasil","Brunéi","Bulgaria","Burkina Faso","Burundi","Bután","Cabo Verde","Camboya","Camerún","Canadá","Catar","Chad","Chile","China","Chipre","Ciudad del Vaticano","Colombia","Comoras","Corea del Norte","Corea del Sur","Costa de Marfil","Costa Rica","Croacia","Cuba","Dinamarca","Dominica","Ecuador","Egipto","El Salvador","Emiratos Árabes Unidos","Eritrea","Eslovaquia","Eslovenia","España","Estados Unidos","Estonia","Etiopía","Filipinas","Finlandia","Fiyi","Francia","Gabón","Gambia","Georgia","Ghana","Granada","Grecia","Guatemala","Guyana","Guinea","Guinea ecuatorial","Guinea-Bisáu","Haití","Honduras","Hungría","India","Indonesia","Irak","Irán","Irlanda","Islandia","Islas Marshall","Islas Salomón","Israel","Italia","Jamaica","Japón","Jordania","Kazajistán","Kenia","Kirguistán","Kiribati","Kuwait","Laos","Lesoto","Letonia","Líbano","Liberia","Libia","Liechtenstein","Lituania","Luxemburgo","Madagascar","Malasia","Malaui","Maldivas","Malí","Malta","Marruecos","Mauricio","Mauritania","México","Micronesia","Moldavia","Mónaco","Mongolia","Montenegro","Mozambique","Namibia","Nauru","Nepal","Nicaragua","Níger","Nigeria","Noruega","Nueva Zelanda","Omán","Países Bajos","Pakistán","Palaos","Panamá","Papúa Nueva Guinea","Paraguay","Perú","Polonia","Portugal","Reino Unido","República Centroafricana","República Checa","República de Macedonia","República del Congo","República Democrática del Congo","República Dominicana","República Sudafricana","Ruanda","Rumanía","Rusia","Samoa","San Cristóbal y Nieves","San Marino","San Vicente y las Granadinas","Santa Lucía","Santo Tomé y Príncipe","Senegal","Serbia","Seychelles","Sierra Leona","Singapur","Siria","Somalia","Sri Lanka","Suazilandia","Sudán","Sudán del Sur","Suecia","Suiza","Surinam","Tailandia","Tanzania","Tayikistán","Timor Oriental","Togo","Tonga","Trinidad y Tobago","Túnez","Turkmenistán","Turquía","Tuvalu","Ucrania","Uganda","Uruguay","Uzbekistán","Vanuatu","Venezuela","Vietnam","Yemen","Yibuti","Zambia","Zimbabue"
     ];
 
 ?>
@@ -158,15 +112,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 23</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <a class="enlace" href='../../html/array/EjerciciosArray.php' ;>Inicio</a>
+    <a class="enlace" href='https://github.com/rubengarzon/DWES/blob/master/tema1/ejercicio23/index.php' style='margin-left: 10px;'>Ver código</a>
+    <br>
+    <br>
+    
+    <h1>Continentes</h1>
 
     <?php
-
-        foreach ($alumnos as $key => $value) {
+        foreach ($continentes as $key => $value) {
             foreach ($value as $clave => $valor) {
+                echo $valor;
+                echo "<br>";
                 
             }
+            echo "<br>";
+        }
+    echo "<h1>Países</h1>";
+        foreach ($paises as $key => $value) {
+            foreach ($value as $clave => $valor) {
+                if($clave == "Bandera"){
+                    echo "<br>";
+                    echo "<img src=$valor width='100px'>";
+                    echo "<br>";
+                }elseif($clave != "Bandera"){
+                    echo "<br>";
+                    echo $valor;
+                    echo "<br>";
+                }
+            }
+            echo "<br>";
+            echo "<br>";
         }
 
     ?>
