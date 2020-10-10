@@ -2,10 +2,7 @@
 
     $carta = [
         "primeros" => [
-             "Spaghetti con tomates secos y mozarella" => [
-                "precio" => "6€",
-                "foto" => "https://img-global.cpcdn.com/recipes/ae2e0b27d94a07cc/751x532cq70/spaghetti-con-tomates-secos-y-mozarella-foto-principal.jpg"
-             ],
+             
              "Pisto" => [
                 "precio" => "8€",
                 "foto" => "https://img-global.cpcdn.com/recipes/e4443f32283e1c39/751x532cq70/pisto-foto-principal.jpg"
@@ -51,6 +48,24 @@
                 "foto" => "https://i.blogs.es/215439/tarta-bourdaloue/1366_2000.jpg"
              ],
         ]
+
+        "menu1" => [
+            "primer plato" => [
+               "Spaghetti con tomates secos y mozarella",
+               "precio" => "6€",
+               "foto" => "https://img-global.cpcdn.com/recipes/ae2e0b27d94a07cc/751x532cq70/spaghetti-con-tomates-secos-y-mozarella-foto-principal.jpg"
+            ],
+        ],
+        "menu2" => [
+         "nombre" => "Spaghetti con tomates secos y mozarella",
+         "precio" => "6€",
+         "foto" => "https://img-global.cpcdn.com/recipes/ae2e0b27d94a07cc/751x532cq70/spaghetti-con-tomates-secos-y-mozarella-foto-principal.jpg"
+        ],
+        "menu3" => [
+         "nombre" => "Spaghetti con tomates secos y mozarella",
+         "precio" => "6€",
+         "foto" => "https://img-global.cpcdn.com/recipes/ae2e0b27d94a07cc/751x532cq70/spaghetti-con-tomates-secos-y-mozarella-foto-principal.jpg"
+     ],
     ];
 
 ?>
@@ -69,7 +84,18 @@
     <?php
       foreach ($carta as $key => $value) {
          foreach ($value as $clave => $valor) {
-            echo $clave . "  " . $valor;
+            echo $clave;
+            echo "<br>";
+            foreach ($valor as $clave1 => $valor1) {
+               if($clave1 == "foto"){
+                  echo "<img src='$valor1' width='100px'>";
+                  echo "<br>";
+               }else{
+                  echo $valor1;
+                  echo "<br>";
+               }
+               
+            }
          }
       }
     ?>
