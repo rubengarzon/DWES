@@ -8,6 +8,7 @@
         "Verbos irregulares en inglés" => "../EjerciciosDWES/tema3/ejercicio22/index.php",
         "Información sobre continentes, países, capitales y banderas" => "../EjerciciosDWES/tema3/ejercicio23/index.php",
         "Carta de un restaurante" => "../EjerciciosDWES/tema3/ejercicio24/index.php",
+        "Calendario mejorado" => "../EjerciciosDWES/tema3/ejercicio25/index.php",
     ];
 
 ?>

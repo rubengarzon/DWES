@@ -127,16 +127,21 @@
       $precioSegundoPlatoMenu1 = $carta["segundos"]["Pollo al curry"]["precio"];
       $precioPostreMenu1 = $carta["postres"]["Tarta bourdaloue"]["precio"];
       $precioTotalMenu1 = $precioPrimerPlatoMenu1 + $precioSegundoPlatoMenu1 + $precioPostreMenu1;
+      $descuentoMenu1 = ($precioTotalMenu1 * 20) / 100;
 
       $precioPrimerPlatoMenu2 = $carta["primeros"]["Pisto"]["precio"];
       $precioSegundoPlatoMenu2 = $carta["segundos"]["Tortilla de calabacín"]["precio"];
       $precioPostreMenu2 = $carta["postres"]["Torta Ortigara"]["precio"];
       $precioTotalMenu2 = $precioPrimerPlatoMenu2 + $precioSegundoPlatoMenu2 + $precioPostreMenu2;
+      $descuentoMenu2 = ($precioTotalMenu2 * 20) / 100;
+
 
       $precioPrimerPlatoMenu3 = $carta["primeros"]["Almejas en salsa Montilla Moriles"]["precio"];
       $precioSegundoPlatoMenu3 = $carta["segundos"]["Lomo de cerdo relleno"]["precio"];
       $precioPostreMenu3 = $carta["postres"]["tocino de cielo"]["precio"];
       $precioTotalMenu3 = $precioPrimerPlatoMenu3 + $precioSegundoPlatoMenu3 + $precioPostreMenu3;
+      $descuentoMenu3 = ($precioTotalMenu3 * 20) / 100;
+
 
 
       $i = 0;
@@ -151,24 +156,33 @@
                      echo "<p style='text-align: center'>"; 
                         echo $value;
                      echo "</p>";
-                     echo "<p style='text-align: center'>"; 
+                     echo "<p style='text-align: center; text-decoration: line-through'>"; 
                         echo "Precio: " . $precioTotalMenu1 . "€";
+                     echo "</p>";
+                     echo "<p style='text-align: center'>"; 
+                        echo "Descuento 20%: " . $descuentoMenu1 . "€";
                      echo "</p>";
                      $i++;
                   }elseif($key == "Postre" && $i == 1){
                      echo "<p style='text-align: center'>"; 
                         echo $value;
                      echo "</p>";
-                     echo "<p style='text-align: center'>"; 
+                     echo "<p style='text-align: center;text-decoration: line-through'>"; 
                         echo "Precio: " . $precioTotalMenu2 . "€";
+                     echo "</p>";
+                     echo "<p style='text-align: center'>"; 
+                        echo "Descuento 20% " . $descuentoMenu2 . "€";
                      echo "</p>";
                      $i++;
                   }elseif($key == "Postre" && $i == 2){
                      echo "<p style='text-align: center'>"; 
                         echo $value;
                      echo "</p>";
-                     echo "<p style='text-align: center'>"; 
+                     echo "<p style='text-align: center;text-decoration: line-through'>"; 
                         echo "Precio: " . $precioTotalMenu3 . "€";
+                     echo "</p>";
+                     echo "<p style='text-align: center'>"; 
+                        echo "Descuento 20% " . $descuentoMenu3 . "€";
                      echo "</p>";
                   }else{
                      echo "<p style='text-align: center;>";
