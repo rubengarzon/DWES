@@ -1,13 +1,13 @@
 <?php
 
     $ejercicios = [
-        "Selección de alumnos" => "../../tema3/arrays/ejercicio22/index.php",
-        "Meses del año" => "../../tema3/arrays/ejercicio18/index.php",
-        "Tablero para jugar al juego de los barcos" => "../../tema3/arrays/ejercicio19/index.php",
-        "Nota de los alumnos de 2º DAW para el módulo DWES" => "../../tema3/arrays/ejercicio20/index.php",
-        "Verbos irregulares en inglés" => "../../tema3/arrays/ejercicio21/index.php",
-        "Información sobre continentes, países, capitales y banderas" => "../../tema3/arrays/ejercicio23/index.php",
-        "Carta de un restaurante" => "../../tema3/arrays/ejercicio24/index.php",
+        "Selección de alumnos" => "../../tema3/ejercicio22/index.php",
+        "Meses del año" => "../EjerciciosDWES/tema3/ejercicio21/index.php",
+        "Tablero para jugar al juego de los barcos" => "../EjerciciosDWES/tema3/ejercicio20/index.php",
+        "Nota de los alumnos de 2º DAW para el módulo DWES" => "../EjerciciosDWES/tema3/ejercicio21/index.php",
+        "Verbos irregulares en inglés" => "../EjerciciosDWES/tema3/ejercicio22/index.php",
+        "Información sobre continentes, países, capitales y banderas" => "../EjerciciosDWES/tema3/ejercicio23/index.php",
+        "Carta de un restaurante" => "../EjerciciosDWES/tema3/ejercicio24/index.php",
     ];
 
 ?>
@@ -18,8 +18,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Ejercicios Array</title>
+    <link rel="stylesheet" href="./csscopy/style.css">
 </head>
 <body>
     <img src="./img/codigo.png" alt="" width="100px" height="100px" style="display: block;margin:auto">
