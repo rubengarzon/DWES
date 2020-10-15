@@ -3,12 +3,19 @@
         * @author Rubén Jesús Garzón Zafra
         * Mostrar el calendario del mes
         */
-        $fecha = "2015-08-30";
-        $fechaComoEntero = strtotime($fecha);
-        $festivo = "15";
-        $hoy = date("d", $fechaComoEntero);
-        $dias = date("t", $fechaComoEntero);
-        $anio = date("y", $fechaComoEntero);
+        // valores iniciales para nuestro calendario
+        $month=date("n");
+        $year=date("Y");
+        $diaActual=date("j");
+ 
+        // Obtenemos el dia de la semana del primer dia
+        // Devuelve 0 para domingo, 6 para sabado
+        $diaSemana=date("w",mktime(0,0,0,$month,1,$year))+7;
+        // Obtenemos el ultimo dia del mes
+        $ultimoDiaMes=date("d",(mktime(0,0,0,$month+1,1,$year)-1));
+        // Meses del año
+        $meses=array(1=>"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+        "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
 
 ?>
 
@@ -18,38 +25,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 17</title>
+    <style>
+		#calendar {
+			font-family:Arial;
+			font-size:12px;
+		}
+		#calendar caption {
+			text-align:left;
+			padding:5px 10px;
+			background-color:#003366;
+			color:#fff;
+			font-weight:bold;
+		}
+		#calendar th {
+			background-color:#006699;
+			color:#fff;
+			width:40px;
+		}
+		#calendar td {
+			text-align:right;
+			padding:2px 5px;
+			background-color:silver;
+		}
+		#calendar .hoy {
+			background-color:red;
+		}
+        
+        #calendar .festivo {
+            background-color:green;
+        }
+	</style>
 </head>
 <body>
        
-    <?php
-        echo "Calendario " . $fecha;
-        echo "<br>";
-        echo "<br>";
-            for ($i=1; $i < $dias; $i++) {
-                $dia = date("l", mktime(0,0,0,8,$i,2015));
-                
-                    if($dia == "Sunday"){
-                        echo "<p style='display: inline'>";
-                        echo $i;
-                        echo "<br>";
-                        echo "</p>";
-                        
-                    }elseif($i == $festivo){
-                        echo "<p style='display: inline; color: red;'>";
-                        echo $i . " ";
-                        echo "</p>"; 
-                    }elseif($i == $hoy){
-                        echo "<p style='display: inline; color: green;'>";
-                        echo $i . " ";
-                        echo "</p>";
-                    }else{  
-                        echo $i . " ";
-                    }
-                
+    
+        <table id="calendar">
+        <caption><?php echo $meses[$month]." ".$year?></caption>
+        <tr>
+            <th>Lun</th><th>Mar</th><th>Mie</th><th>Jue</th>
+            <th>Vie</th><th>Sab</th><th>Dom</th>
+        </tr>
+        <tr bgcolor="silver">
+            <?php
+            $last_cell=$diaSemana+$ultimoDiaMes;
+            // hacemos un bucle hasta 42, que es el máximo de valores que puede
+            // haber... 6 columnas de 7 dias
+            for($i=1;$i<=42;$i++)
+            {
+                if($i==$diaSemana)
+                {
+                    // determinamos en que dia empieza
+                    $day=1;
+                }
+                if($i<$diaSemana || $i>=$last_cell)
+                {
+                    // celca vacia
+                    echo "<td>&nbsp;</td>";
+                }else{
+                    // mostramos el dia
+                    if($day==$diaActual)
+                        echo "<td class='hoy'>$day</td>";
+                        elseif($day == 12)
+                        echo "<td class='festivo'>$day</td>";
+                    else
+                        echo "<td>$day</td>";
+                    $day++;
+                }
+                // cuando llega al final de la semana, iniciamos una columna nueva
+                if($i%7==0)
+                {
+                    echo "</tr><tr>\n";
+                }
             }
+        ?>
+        </tr>
+    </table>
 
-        
-    ?>
 
 
 </body>
