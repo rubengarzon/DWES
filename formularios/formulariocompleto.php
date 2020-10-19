@@ -11,8 +11,8 @@
 
 
 // Definimos las variables
-$nameErr = $emailErr = $genderErr = $websiteErr = $vehicleErr = "";
-$name = $email = $gender = $comment = $website = $vehicle = "";
+$nameErr = $emailErr = $genderErr = $websiteErr = $vehicleErr = $educacionErr = "";
+$name = $email = $gender = $comment = $website = $vehicle = $educacion = "";
 $datos = [];
 
 
@@ -20,17 +20,16 @@ $datos = [];
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
     $nameErr = "Nombre requerido";
-  } else {
+  }else if(!preg_match("/^[a-zA-Z-']*$/",$name)){
+    $nameErr = "Solo letras y espacios en blanco permitido";
+  } else{
     $name = test_input($_POST["name"]);
     array_push($datos,$name);
-    // comprueba si el nombre contiene letras y los espacios en blanco
-    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-      $nameErr = "Solo letras y espacios en blanco permitido";
-    }
   }
   
+  
   if (empty($_POST["email"])) {
-    $emailErr = "Email es requerido";
+    $emailErr = "* Email es requerido";
   } else {
     $email = test_input($_POST["email"]);
     array_push($datos,$email);
@@ -59,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 
   if (empty($_POST["gender"])) {
-    $genderErr = "El género es requerido";
+    $genderErr = "* El género es requerido";
   } else {
     $gender = test_input($_POST["gender"]);
     array_push($datos,$gender);
@@ -70,6 +69,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     $vehicle = test_input($_POST["vehicle"]);
     array_push($datos,$vehicle);
+  }
+
+  if (empty($_POST["educacion"])) {
+    $educacion = "* La educación es requerido";
+  } else {
+    $educacion = test_input($_POST["educacion"]);
+    array_push($datos,$educacion);
   }
 }
 
@@ -86,10 +92,10 @@ function test_input($data) {
 <p><span class="error">* campos requeridos</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   Nombre: <input type="text" name="name" value="<?php echo $name;?>">
-  <span class="error">* <?php echo $nameErr;?></span>
+  <span class="error"> <?php echo $nameErr;?></span>
   <br><br>
   E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-  <span class="error">* <?php echo $emailErr;?></span>
+  <span class="error"> <?php echo $emailErr;?></span>
   <br><br>
   Sitio web: <input type="text" name="website" value="<?php echo $website;?>">
   <span class="error"><?php echo $websiteErr;?></span>
@@ -112,6 +118,16 @@ function test_input($data) {
   <label for="vehicle3"> tengo patinete eléctrico</label><br>
   <span class="error"> <?php echo $vehicleErr;?></span>
   <br><br>
+  Educación
+  <br><br>
+  <select name="educacion">
+        <option value="sin-estudios">Sin estudios</option>
+        <option value="educacion-obligatoria" <?php if (isset($educacion) && $educacion=="educacion-obligatoria") echo "selected";?>>Educación Obligatoria</option>
+        <option value="formacion-profesional" <?php if (isset($educacion) && $educacion=="formacion-profesional") echo "selected";?>>Formación profesional</option>
+        <option value="universidad" <?php if (isset($educacion) && $educacion=="universidad") echo "selected";?>>Universidad</option>
+    </select>
+    <span class="error"> <?php echo $educacionErr;?></span>
+    <br><br>
   <input type="submit" name="submit" value="Enviar">  
 </form>
 
