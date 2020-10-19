@@ -1,4 +1,9 @@
 <?php
+    /*
+    * @author 
+    * @version
+    */
+
     // Limpieza de datos
     function clearData($cadena){
         $cadenaLimpia = htmlspecialchars($cadena);
