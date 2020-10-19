@@ -4,6 +4,13 @@
     * @version
     */
 
+
+    //Inicialización de variables
+    $nombre = $apellidos = $email = $msgErrorNombre = $msgErrorApellidos = $msgErrorEmail = "";
+    
+    $procesaFormulario = false;
+
+
     // Limpieza de datos
     function clearData($cadena){
         $cadenaLimpia = htmlspecialchars($cadena);
@@ -12,15 +19,6 @@
 
         return $cadenaLimpia;
     }
-
-    //Inicialización de variables
-    $nombre = "";
-    $email = "";
-    $apellidos = "";
-    $msgErrorNombre = "";
-    $msgErrorApellidos = "";
-    $msgErrorEmail = "";
-    $procesaFormulario = false;
 
     //Validación
     if(isset($_POST['enviar'])){
