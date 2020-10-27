@@ -45,14 +45,12 @@
 
          $resultado = $numero;
          $j = 2;
-
-         echo $resultado . " " . $j;
-         echo "<br>";
+         $n = $j;
 
          for ($i = 1; $i <= 10; $i++) {
-             if($resultado % $j == 0){
-                 $resultado = $resultado / $j;
+            if($resultado % $j == 0){
                  echo $resultado . " " . $j;
+                 $resultado = $resultado / $j;
                  echo "<br>";
              }else{
                  $j++;
