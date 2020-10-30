@@ -71,4 +71,7 @@
              echo "<br>";
              echo "<input type='submit' name='enviar' value='Enviar'>";
          echo "</form>";
+         echo "<br>";
+         echo "<br>";
+         echo "<a href='https://github.com/rubengarzon/DWES/blob/master/funciones/ejercicio2.php'>Ver código</a>";
      }

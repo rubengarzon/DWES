@@ -44,9 +44,14 @@
         $procesaFormulario = true;
         $dni = clearData($_GET['dni']);
 
-        if(empty($dni)){  //validar nombre
+        if(empty($dni)){  //validar dni
             $procesaFormulario = false;
             $msgErrorDni = "* DNI requerido";
+        }
+
+        if(!preg_match("/^[0-9]{8,8}[A-Za-z]$/", $dni)){  //validar dni
+            $procesaFormulario = false;
+            $msgErrorDni = "* DNI incorrecto";
         }
 
     }
@@ -63,6 +68,10 @@
             echo "<br>";
             echo "<input type='submit' name='enviar' value='Enviar'>";
         echo "</form>";
+        echo "<br>";
+        echo "<br>";
+        echo "<a href='https://github.com/rubengarzon/DWES/blob/master/funciones/ejercicio1.php'>Ver código</a>";
+
     }
 
 
