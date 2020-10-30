@@ -20,9 +20,8 @@
             echo "<h3>Usuarios generados</h3>";
 
           /*
-           * Función anónima
-           * @param
-           * @return
+           * Función anónima que genera un usuario
+           * @param $usuario
           */
             $usuarios = array_map (function($usuario){
                 echo substr($usuario['apellido1'], 0,2) . substr($usuario['apellido2'], 0,2) . substr($usuario['nombre'], 0,1);
