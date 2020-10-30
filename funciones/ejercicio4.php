@@ -43,8 +43,7 @@
       */
       function sumar($numero){
           if ($numero != 0){
-              $numero = $numero + sumar($numero - 1);
-              return $numero;
+              return $numero + sumar($numero - 1);
           }
       }
 
