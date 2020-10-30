@@ -4,7 +4,7 @@
        * @version 1.0
       */
 
-
+            header("Content-Type: text/html;charset=utf-8");
           //Inicialización de variables
           $nombre = $apellidos = $email = $msgErrorNombre = $msgErrorApellidos = $msgErrorEmail = "";
 
@@ -21,7 +21,6 @@
           $procesaFormulario = false;
 
 
-
           /*
            * Función anónima
            * @param
@@ -31,6 +30,7 @@
                 echo substr($usuario['apellido1'], 0,2) . substr($usuario['apellido2'], 0,2) . substr($usuario['nombre'], 0,1);
             }, $aUsuarios);
 
-             $usuarios;
+            $usuarios;
 
             echo "<br>";
+
