@@ -4,8 +4,8 @@
         "Calcula la letra del dni" => "./funciones/ejercicio1.php",
         "Factorizar un número" => "./funciones/ejercicio2.php",
         "Generar usuarios" => "./funciones/ejercicio3.php",
-        "Ejercicio 4" => "./funciones/ejercicio4.php",
-        "Ejercicio 5" => "./funciones/ejercicio5.php",
+        "Sumar numeros de forma recursiva" => "./funciones/ejercicio4.php",
+        "Crear enlaces mediante una función" => "./funciones/ejercicio5.php",
     ];
 
 ?>

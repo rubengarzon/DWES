@@ -6,9 +6,8 @@
 
 
       //Inicialización de variables
-      $msgErrorNumero = $msgErrorNumero2 = "";
+      $msgErrorNumero = "";
       $numero = 0;
-      $numero2 = 0;
       $procesaFormulario = false;
 
 
@@ -29,16 +28,10 @@
       if(isset($_GET['enviar'])){
           $procesaFormulario = true;
           $numero = clearData($_GET['numero']);
-          $numero2 = clearData($_GET['numero2']);
 
           if(empty($numero)){  //validar nombre
               $procesaFormulario = false;
               $msgErrorNumero = "* Número requerido";
-          }
-
-          if(empty($numero2)){  //validar nombre
-              $procesaFormulario = false;
-              $msgErrorNumero2 = "* Número requerido";
           }
 
       }
@@ -48,25 +41,23 @@
        * @param $numero
        * @return $numero*$numero
       */
-      function sumar($numero, $numero2){
-          $numero = $numero + $numero2;
-          return $numero;
+      function sumar($numero){
+          if ($numero != 0){
+              $numero = $numero + sumar($numero - 1);
+              return $numero;
+          }
       }
 
       echo "<br>";
 
       //Formulario
       if($procesaFormulario){
-          echo sumar($numero, $numero2);
+          echo sumar($numero);
           echo "<br>";
       }else{
           echo "<form action=$_SERVER[PHP_SELF] method='GET'>";
               echo "<input type='number' name='numero' value='$numero'>";
               echo " " . $msgErrorNumero;
-              echo "<br>";
-              echo "<br>";
-              echo "<input type='number' name='numero2' value='$numero2'>";
-              echo " " . $msgErrorNumero2;
               echo "<br>";
               echo "<br>";
               echo "<input type='submit' name='enviar' value='Enviar'>";
