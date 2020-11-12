@@ -49,7 +49,7 @@
             $msgErrorDni = "* DNI requerido";
         }
 
-        if(!preg_match("/^[0-9]{8,8}[A-Za-z]$/", $dni)){  //validar dni
+        if(!preg_match("/^[0-9]{8,8}$/", $dni)){  //validar dni
             $procesaFormulario = false;
             $msgErrorDni = "* DNI incorrecto";
         }
