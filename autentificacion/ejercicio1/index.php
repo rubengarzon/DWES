@@ -1,31 +1,30 @@
 <?php
     session_start();
 
-    if(!isset($_SESSION['auth'])){
+    if(isset($_POST['logout'])){
+        $_SESSION['auth'] = false;
+        $_SESSION['usuario'] = 'Invitado';
+    }else{
         $_SESSION['auth'] = false;
         $_SESSION['usuario'] = 'Invitado';
     }
-
-    echo "Usted está en el sistema como: " . $_SESSION['usuario'];
-
-    if($_SESSION['auth']){
-        mostrarLogout();
-    }else{
-        mostrarFormulario();
-    }
-
-    function mostrarLogout() {
-        echo "<button type='submit' name='logout'>Cerrar sesión</button>";
-    }
-
-    function mostrarFormulario(){
-        echo "<br><br>";
-        echo "<form action='privado.php' method='post'>";
-            echo "Usuario <input type='text' name='usuario'>";
-            echo " Contraseña <input type='password' name='password'>";
-            echo " <input type='submit' name='enviar'>";
-        echo "</form>";
-    }
-
-
+    
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+</head>
+<body>
+    <p>Usted está en el sistema como: <b><?php echo $_SESSION['usuario']?></b></p>
+
+    <form action="privado.php" method="post">
+        Usuario <input type="text" name="usuario" id="">
+        Contraseña <input type="password" name="password" id="">
+        <input type="submit" value="Enviar" name="enviar">
+    </form>
+</body>
+</html>
